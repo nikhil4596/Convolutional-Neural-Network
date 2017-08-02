@@ -14,4 +14,5 @@ x = tf.placeholder('float',shape=[None, 784])
 y = tf.placeholder('float')
 
 def model(data):
-    pass 
+    hidden_layer_1 = {'weigths': tf.variable(tf.random_normal([784, hl1_nodes])),
+                      'biases': tf.variable(tf.random_normal([hl1_nodes]))}
